@@ -1,0 +1,25 @@
+.hobbies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.hobby { padding: 28px; }
+.hobby-num {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.hobby p { margin: 0; color: var(--muted); }
+
+.engagement { margin-top: 40px; color: var(--muted); }
+
+@media (max-width: 1000px) {
+  .hobbies { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .hobbies { grid-template-columns: 1fr; }
+}

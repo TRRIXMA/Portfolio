@@ -1,0 +1,31 @@
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ambient span {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(110px);
+  animation: drift 26s ease-in-out infinite alternate;
+}
+.ambient span:nth-child(1) { width: 52vw; height: 52vw; background: var(--signal); top: -18vw; right: -14vw; opacity: .28; }
+.ambient span:nth-child(2) { width: 44vw; height: 44vw; background: var(--violet); bottom: -20vw; left: -12vw; opacity: .26; animation-delay: -8s; }
+.ambient span:nth-child(3) { width: 30vw; height: 30vw; background: var(--rose); top: 40%; left: 45%; opacity: .14; animation-delay: -16s; }
+
+/* grain */
+.ambient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 760px) {
+  .ambient span:nth-child(1) { width: 90vw; height: 90vw; }
+  .ambient span:nth-child(2) { width: 80vw; height: 80vw; }
+}

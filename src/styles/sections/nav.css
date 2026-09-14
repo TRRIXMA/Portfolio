@@ -1,0 +1,102 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px var(--gutter);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s, background .3s;
+}
+.nav.scrolled {
+  background: rgba(10, 9, 16, .6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-color: var(--line);
+}
+
+.logo { display: block; }
+.logo-mark {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: transform .4s, filter .4s;
+}
+.logo:hover .logo-mark {
+  transform: rotate(-8deg);
+  filter: drop-shadow(0 0 12px rgba(255, 79, 139, .45));
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: .95rem;
+  color: var(--muted);
+}
+.nav-links a { position: relative; transition: color .2s; }
+.nav-links a:hover { color: var(--text); }
+.nav-links a:not(.nav-cta)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1.5px;
+  width: 100%;
+  background: var(--grad);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s;
+}
+.nav-links a:not(.nav-cta):hover::after { transform: scaleX(1); }
+
+.nav-cta {
+  padding: 9px 18px;
+  border-radius: 999px;
+  color: var(--text) !important;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .04);
+  transition: border-color .2s, background .2s;
+}
+.nav-cta:hover { border-color: var(--rose); background: rgba(255, 79, 139, .1); }
+
+.burger {
+  display: none;
+  background: none;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 0;
+}
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  margin: 6px auto;
+  transition: transform .3s;
+}
+
+@media (max-width: 760px) {
+  .burger { display: block; }
+  .burger[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
+  .burger[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
+
+  .nav-links {
+    position: fixed;
+    inset: 72px 0 auto 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px var(--gutter) 32px;
+    background: rgba(10, 9, 16, .96);
+    border-bottom: 1px solid var(--line);
+    transform: translateY(-130%);
+    transition: transform .35s;
+    font-size: 1.2rem;
+  }
+  .nav-links.open { transform: none; }
+}

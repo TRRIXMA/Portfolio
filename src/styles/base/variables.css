@@ -1,0 +1,18 @@
+:root {
+  --bg: #0a0910;
+  --text: #f1eee8;
+  --muted: #9a96a6;
+  --line: rgba(241, 238, 232, 0.1);
+
+  --signal: #ff6a3d;
+  --rose: #ff4f8b;
+  --violet: #8b6cff;
+  --grad: linear-gradient(100deg, var(--signal) 0%, var(--rose) 50%, var(--violet) 100%);
+
+  --sans: "Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --gutter: clamp(20px, 5vw, 72px);
+  --radius: 22px;
+}
