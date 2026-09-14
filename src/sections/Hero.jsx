@@ -26,6 +26,13 @@ export default function Hero() {
         </div>
 
         <svg className="hero-trace" viewBox="0 0 600 600" aria-hidden="true">
+          <defs>
+            <linearGradient id="traceGrad" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stopColor="#ff6a3d" />
+              <stop offset=".5" stopColor="#ff4f8b" />
+              <stop offset="1" stopColor="#8b6cff" />
+            </linearGradient>
+          </defs>
           <path className="trace" d="M40 560 V420 H200 V300 H340 V160 H560" />
           <path className="trace t2" d="M40 480 H120 V360 H260 V240 H420 V60" />
           <path className="trace t3" d="M120 600 V520 H300 V400 H480 V220 H600" />

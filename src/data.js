@@ -20,10 +20,12 @@ export const techMarquee = [
 ];
 
 export const stats = [
-  { num: '4', label: 'stages en ingénierie automobile' },
-  { num: '6', unit: 'mois', label: 'chez BMW AG à Munich' },
+  { num: '4', label: "stages en entreprise, de l'industriel à la start-up" },
+  { num: '6', unit: 'mois', label: "d'expérience à l'international (Munich)" },
   { num: 'C1', label: 'anglais & espagnol' },
 ];
+
+export const sectors = ['Aéronautique', 'Défense', 'Ferroviaire', 'Automobile', 'Énergie'];
 
 export const pillars = [
   { title: 'Systèmes embarqués', text: 'Microcontrôleurs STM32 & Arduino, C, FPGA, protocoles CAN / IP / Ethernet, Linux.' },

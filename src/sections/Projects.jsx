@@ -10,7 +10,7 @@ export default function Projects() {
 
       <div className="projects">
         {projects.map(p => (
-          <Reveal as="article" className={`project ${p.featured ? 'project-lg' : ''}`} key={p.title}>
+          <Reveal as="article" className={`project glass ${p.featured ? 'project-lg' : ''}`} key={p.title}>
             <div className="project-top mono"><span>{p.context}</span><span>{p.kind}</span></div>
             <h3>{p.title}</h3>
             <p>{p.text}</p>

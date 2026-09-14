@@ -3,7 +3,7 @@ import { Reveal, SectionHead, Tags } from '../components.jsx';
 
 export default function Skills() {
   return (
-    <section className="section section-soft" id="competences">
+    <section className="section" id="competences">
       <SectionHead index="04" label="Compétences & formation">
         La <em>boîte à outils</em>.
       </SectionHead>

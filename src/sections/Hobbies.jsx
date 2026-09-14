@@ -10,7 +10,7 @@ export default function Hobbies() {
 
       <div className="hobbies">
         {hobbies.map(h => (
-          <Reveal className="hobby" key={h.text}>
+          <Reveal className="hobby glass" key={h.text}>
             <span className="hobby-num">{h.num}{h.unit && <small>{h.unit}</small>}</span>
             <p>{h.text}</p>
           </Reveal>

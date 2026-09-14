@@ -8,7 +8,8 @@ export default function Contact() {
         <h2 className="contact-title">Construisons <em>la suite</em><br />ensemble.</h2>
         <p className="contact-lead">
           Je recherche un stage de fin d'études de 6 mois à partir de fin janvier 2027,
-          en systèmes embarqués, logiciel ou cybersécurité. {profile.location}
+          en systèmes embarqués, logiciel ou cybersécurité — aéronautique, défense, ferroviaire,
+          automobile et au-delà. {profile.location}
         </p>
         <a className="contact-mail" href={`mailto:${profile.email}`}>
           {profile.email} <span aria-hidden="true">↗</span>

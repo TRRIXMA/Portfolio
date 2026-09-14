@@ -1,4 +1,5 @@
-import { pillars, profile, stats } from '../data.js';
+import { Fragment } from 'react';
+import { pillars, profile, sectors, stats } from '../data.js';
 import { Reveal, SectionHead } from '../components.jsx';
 
 export default function About() {
@@ -12,11 +13,12 @@ export default function About() {
         <Reveal className="about-text">
           <p>
             En 5<sup>e</sup> année à l'ESEO Angers en <strong>Systèmes Embarqués &amp; Logiciel Cybersécurité</strong>,
-            j'ai construit mon parcours au contact de l'industrie automobile : BMW, Stellantis, Renault, Hyliko.
+            j'ai construit mon parcours au contact de grands industriels, en France comme à l'international.
           </p>
           <p>
             Ce qui me motive : comprendre un système de bout en bout, de la carte électronique jusqu'à
-            l'utilisateur final — et le rendre fiable, sûr et agréable à utiliser.
+            l'utilisateur final — et le rendre fiable, sûr et agréable à utiliser. Des exigences
+            au cœur de tous les systèmes critiques.
           </p>
           <p className="traits mono">{profile.traits.join(' · ')}</p>
         </Reveal>
@@ -31,9 +33,19 @@ export default function About() {
         </Reveal>
       </div>
 
+      <Reveal className="sectors">
+        <span className="mono">Secteurs visés</span>
+        {sectors.map((s, i) => (
+          <Fragment key={s}>
+            {i > 0 && <span className="sep" aria-hidden="true"></span>}
+            <span className="sector">{s}</span>
+          </Fragment>
+        ))}
+      </Reveal>
+
       <div className="pillars">
         {pillars.map((p, i) => (
-          <Reveal as="article" className="pillar" key={p.title}>
+          <Reveal as="article" className="pillar glass" key={p.title}>
             <span className="pillar-icon mono">{String(i + 1).padStart(2, '0')}</span>
             <h3>{p.title}</h3>
             <p>{p.text}</p>

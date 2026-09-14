@@ -3,9 +3,9 @@ import { Reveal, SectionHead, Tags } from '../components.jsx';
 
 export default function Experiences() {
   return (
-    <section className="section section-dark" id="experiences">
+    <section className="section" id="experiences">
       <SectionHead index="02" label="Expériences">
-        Quatre stages, <em>une même route</em> : l'automobile.
+        Quatre stages <em>en industrie</em>, de la simulation à la validation.
       </SectionHead>
 
       <ol className="timeline">

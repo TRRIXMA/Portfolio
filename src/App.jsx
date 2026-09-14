@@ -10,6 +10,7 @@ import Contact from './sections/Contact.jsx';
 export default function App() {
   return (
     <>
+      <div className="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
       <Nav />
       <main id="top">
         <Hero />
