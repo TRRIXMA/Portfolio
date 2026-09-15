@@ -15,8 +15,8 @@ export const profile = {
 };
 
 export const techMarquee = [
-  'STM32', 'Langage C', 'CAN', 'FPGA', 'Linux', 'React',
-  'JavaScript', 'Python', 'EBIOS RM', 'Analyse de risques', 'IHM', 'Java',
+  'STM32', 'Langage C', 'RTOS', 'CAN', 'Linux', 'Sûreté de fonctionnement',
+  'React', 'JavaScript', 'Python', 'EBIOS RM', 'IA embarquée', 'IHM',
 ];
 
 export const stats = [
@@ -28,9 +28,9 @@ export const stats = [
 export const sectors = ['Aéronautique', 'Défense', 'Ferroviaire', 'Automobile', 'Énergie'];
 
 export const pillars = [
-  { title: 'Systèmes embarqués', text: 'Microcontrôleurs STM32 & Arduino, C, FPGA, protocoles CAN / IP / Ethernet, Linux.' },
+  { title: 'Systèmes embarqués', text: 'Microcontrôleurs STM32 & Arduino, C, RTOS et temps réel, protocoles CAN / IP / Ethernet, Linux, IA pour systèmes embarqués.' },
   { title: 'Logiciel & IHM', text: 'Interfaces utilisateurs en React et JavaScript, outillage, Python, Java, Android.' },
-  { title: 'Cybersécurité', text: 'Analyse des risques, gestion des menaces, méthode EBIOS.' },
+  { title: 'Sûreté & cybersécurité', text: 'Sûreté de fonctionnement, analyse des risques, gestion des menaces, méthode EBIOS.' },
 ];
 
 export const experiences = [
@@ -85,10 +85,10 @@ export const projects = [
 ];
 
 export const skills = [
-  { group: 'Embarqué', items: ['STM32', 'Arduino', 'C', 'FPGA', 'CAN', 'IP / Ethernet', 'Linux'] },
+  { group: 'Embarqué', items: ['STM32', 'Arduino', 'C', 'RTOS', 'Temps réel', 'CAN', 'IP / Ethernet', 'Linux', 'Outillage C', 'IA pour SE'] },
   { group: 'Développement', items: ['React', 'JavaScript', 'HTML / CSS', 'Python', 'Java', 'Ruby', 'XML', 'Android'] },
   { group: 'Hardware', items: ['Analogique', 'Numérique', 'Commutation', 'LabVIEW', 'CAO / DAO'] },
-  { group: 'Cybersécurité', items: ['Analyse de risques', 'Gestion des menaces', 'EBIOS'] },
+  { group: 'Sûreté & cybersécurité', items: ['Sûreté de fonctionnement', 'Sécurité', 'Analyse de risques', 'Gestion des menaces', 'EBIOS'] },
   { group: 'Gestion de projet', items: ['Cheffe de projet', 'Agile', 'Cycle en V'] },
   { group: 'Langues', items: ['Français', 'Anglais C1', 'Espagnol C1'] },
 ];
