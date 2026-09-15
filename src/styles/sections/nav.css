@@ -21,11 +21,10 @@
   display: block;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   transition: transform .4s, filter .4s;
 }
 .logo:hover .logo-mark {
-  transform: rotate(-8deg);
+  transform: rotate(-6deg);
   filter: drop-shadow(0 0 12px rgba(255, 79, 139, .45));
 }
 

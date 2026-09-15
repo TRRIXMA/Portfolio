@@ -31,14 +31,9 @@ export default function Nav() {
               <stop offset="100%" stopColor="#8b6cff" />
             </linearGradient>
           </defs>
-          <circle cx="60" cy="60" r="60" fill="#0a0910" />
-          <circle cx="60" cy="60" r="57.5" fill="none" stroke="url(#mlgGrad)" strokeWidth="3" />
-          <path d="M22 34 H68 L76 26 H97" fill="none" stroke="url(#mlgGrad)" strokeWidth="3.4" strokeLinecap="round" />
-          <circle cx="97" cy="26" r="4" fill="#8b6cff" />
-          <path d="M98 86 H52 L44 94 H23" fill="none" stroke="url(#mlgGrad)" strokeWidth="3.4" strokeLinecap="round" />
-          <circle cx="23" cy="94" r="4" fill="#ff6a3d" />
-          <text x="61" y="61" textAnchor="middle" dominantBaseline="central" fill="#f1eee8"
-            fontFamily="JetBrains Mono, ui-monospace, monospace" fontWeight="500" fontSize="26" letterSpacing="2.5">MLG</text>
+          <rect x="2" y="2" width="116" height="116" rx="33" fill="none" stroke="rgba(241,238,232,0.18)" strokeWidth="4" />
+          <text x="60" y="62" textAnchor="middle" dominantBaseline="central" fill="url(#mlgGrad)"
+            fontFamily="Syne, 'Inter Tight', system-ui, sans-serif" fontWeight="800" fontSize="30" letterSpacing="-0.3">MLG</text>
         </svg>
       </a>
       <nav className={`nav-links ${open ? 'open' : ''}`}>
